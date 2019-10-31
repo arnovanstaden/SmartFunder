@@ -16,14 +16,32 @@ TABLE OF CONTENTS
    
     ----------------------------------- */
 
-// Adjust landing sections
+// Adjust landing sections for >576px screens
 
-const navbarHeight = $(".navbar").height();
+if ($(window).width() > 576) {
+    const navbarHeight = $(".navbar").height();
 
-$(".client-landing-section").css("padding-top", `${navbarHeight+50}px`);
-$(".support-landing-section").css("padding-top", `${navbarHeight+50}px`);
-$(".home-landing-section").css("padding-top", `${navbarHeight+50}px`);
-$(".about-story-section").css("padding-top", `${navbarHeight+50}px`);
+    $(".client-landing-section").css("padding-top", `${navbarHeight+50}px`);
+    $(".support-landing-section").css("padding-top", `${navbarHeight+50}px`);
+    $(".home-landing-section").css("padding-top", `${navbarHeight+50}px`);
+    $(".about-story-section").css("padding-top", `${navbarHeight+50}px`);
+}
+
+
+// Mobile Nav
+
+const openMobileNav = () => {
+    if ($(window).width() > 576) {
+        $(".mobile-nav").css("width", "50vw");
+    } else {
+        $(".mobile-nav").css("width", "100vw");
+    }
+    
+}
+
+const closeMobileNav = () => {
+    $(".mobile-nav").css("width", "0vw");
+}
 
 
 
@@ -164,4 +182,3 @@ if ($("body").hasClass("home-body")) {
     //     }
     // });
 }
-

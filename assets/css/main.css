@@ -15,7 +15,7 @@ TABLE OF CONTENTS
     4. About Page
     5. Support Page
     6. Client Page
-    7. Terms + Privacy Pages
+    7. Thank You Mail Page
 
 ---------------------------------------- */
 
@@ -236,6 +236,81 @@ nav {
 .mobile-nav-icon:hover i {
     color: white;
     background-color: var(--light-blue);
+}
+
+.mobile-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 20;
+    width: 0;
+    transition: 0.8s;
+}
+
+.mobile-nav-content a{
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 1.5em;
+    display: block;
+    margin: 5px 0;
+}
+
+.mobile-nav>div:nth-child(1) {
+    position: relative;
+    padding: 15px;
+    text-align: right;
+}
+
+.mobile-nav i {
+    /* float: right; */
+    font-size: 1.5em;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.mobile-nav-content {
+    position: absolute;
+    /* text-align: center; */
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav i:hover{
+    color: var(--light-blue);
+    transform: rotate(180deg);
+}
+
+.mobile-nav-logo {
+    width: 70%;
+    padding-top: 40px;
+    display: block;
+    margin: auto;
+}
+
+.mobile-nav-image {
+    width: 30%;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.mobile-nav-login {
+    background-color: var(--light-blue);
+    color: white !important;
+    width: 50%;
+    margin-left: 50%;
+    text-align: center;
+    font-weight: 400 !important;
+    border-radius: 5px;
+    padding: 2px 0 2px 0;
+    font-size: 1.25em !important;
+    margin-top: 30px !important;
 }
 
 
@@ -667,10 +742,12 @@ footer {
     cursor: pointer;
     color: var(--dark-grey);
     transition: 0.5s ease;
+    font-size: 1.1em;
+
 }
 
 .faq-active-category {
-    font-size: 1.2em !important;
+    font-size: 1.3em !important;
     margin: 25px 0 !important;
     color: var(--dark-blue) !important;
 }
@@ -957,3 +1034,11 @@ footer {
 .extra-client-grid {
     display: none;
 }
+
+
+/* --------------------------------------------------------- 
+
+7. THANK YOU MAIL PAGE  
+
+------------------------------------------------- */
+

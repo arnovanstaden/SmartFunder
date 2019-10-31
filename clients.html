@@ -41,8 +41,10 @@
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="./index.html"></a>
-        <img class="navbar-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png" alt="SmartFunder Navbar Logo">
+        <a class="navbar-brand" href="./index.html">
+            <img class="navbar-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png"
+                alt="SmartFunder Navbar Logo">
+        </a>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item">
@@ -66,14 +68,32 @@
 
         <!-- Mobile Navigation -->
 
-        <div class="mobile-nav-icon">
+        <div class="mobile-nav-icon" onclick="openMobileNav()">
             <i class="fal fa-bars"></i>
+        </div>
+
+        <div class="mobile-nav">
+                
+            <div>
+                <i class="far fa-times" onclick="closeMobileNav()"></i>
+            </div>
+            <img class="mobile-nav-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png"
+                alt="SmartFunder Navbar Logo">
+            <div class="mobile-nav-content">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./Clients.html">Clients</a>
+                <a href="./support.html">Support</a>
+                <a href="??" class="mobile-nav-login">Login</a>
+            </div>
+            <img src="./assets/images/illustrations/Home/Mobile-Menu.png" alt="" class="mobile-nav-image">
         </div>
     </nav>
 
 
     <section class="client-landing-section">
-        <img src="./assets/images/illustrations/Client/client-page-landing-banner.png" alt="SmartFunder CLient landing page image with employees students & mobile phone">
+        <img src="./assets/images/illustrations/Client/client-page-landing-banner.png"
+            alt="SmartFunder CLient landing page image with employees students & mobile phone">
     </section>
 
     <section class="client-grid-section">
@@ -265,9 +285,9 @@
     <footer class="container-fluid">
         <div class="footer-nav">
             <a href="./about.html">About</a>
-            <a href="./about.html">Careers</a>
+            <a href="./about.html#careers">Careers</a>
             <a href="./support.html">Support</a>
-            <a href="./support.html">FAQ</a>
+            <a href="./support.html#faq">FAQ</a>
             <a href="./terms.html">Terms</a>
             <a href="./privacy.html">Privacy</a>
         </div>
