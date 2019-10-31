@@ -148,11 +148,20 @@ if ($("body").hasClass("home-body")) {
 
 
     // Vimeo
-    var iframe = document.querySelector('iframe');
+    var iframe = document.querySelector('.home-about-video');
     var player = new Vimeo.Player(iframe);
 
     $(".home-landing-video-link a").click(() => {
         player.play();
-    })
+    });
 
+    // Autoplay Video on scroll
+    var videoOffset = $(".home-about-video").offset();
+
+    // $(".home-body").scroll(()=> {
+    //     if ($(".home-body").scrollTop() >= (videoOffset.top-$(iframe).height() *2.2)) {
+    //         player.play()
+    //     }
+    // });
 }
+

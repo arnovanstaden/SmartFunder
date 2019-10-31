@@ -83,9 +83,97 @@ TABLE OF CONTENTS
 
 }
 
+@media screen and (max-width:991px) {
+    .home-contact-section {
+        padding: 50px 5%;
+    }
+
+    .home-landing-contact form {
+        width: 100%;
+    }
+
+    .home-landing-contact {
+        padding: 0;
+    }
+
+    .home-landing-image {
+        width: 50vw;
+        padding-left: 0;
+    }
+}
+
 @media screen and (max-width:768px) {
     .client-landing-section img {
         width: 100%;
+    }
+
+    .home-landing-video-link {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .home-landing-image {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .home-landing-contact form {
+        width: 75%;
+    }
+
+    .home-landing-section h1 {
+        text-align: center;
+    }
+
+    .home-about-section {
+        padding: 50px 7.5%;
+    }
+
+    .home-about-video {
+        width: 70%;
+        padding: 10px 0;
+    }
+
+    .home-about-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-contact-section .row>div:nth-child(1) {
+        padding-bottom: 50px;
+    }
+
+    .home-contact-section .row>div:nth-child(1) .home-contact-grid {
+        border-right: 0;
+    }
+
+    .home-contact-section .row>div:nth-child(2) .home-contact-grid>div:nth-child(1) {
+        grid-area: 1/2/2/3;
+    }
+
+    .home-contact-section .row>div:nth-child(2) .home-contact-grid .home-contact-grid-text {
+        text-align: right;
+    }
+
+    .home-contact-section .row>div:nth-child(2) .home-contact-grid .home-contact-grid-text .blue-outline-button  {
+        text-align: right;
+    }
+
+    .home-contact-grid-text h4{
+        font-size: 1.2em;
+    }
+
+    .home-contact-grid-text {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .home-about-video {
+        width: 90%
     }
 }
 
@@ -116,7 +204,8 @@ TABLE OF CONTENTS
         width: 50%;
     }
 
-    #first-about-image, .careers-image-container img {
+    #first-about-image,
+    .careers-image-container img {
         padding-bottom: 30px;
     }
 
@@ -152,6 +241,89 @@ TABLE OF CONTENTS
     }
 
 
+}
+
+
+
+/* ---------------------------------------------------------
+    5. SUPPORT PAGE STYLES */
+
+@media screen and (max-width:991px) {
+    .support-contact-form form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .support-landing-text-container {
+        text-align: center;
+    }
+
+    .support-landing-text-container h1 {
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    .faq-grid {
+        padding: 2% 5%;
+    }
+
+    .faq-container {
+        padding: 30px 0;
+    }
+
+    .support-contact-details {
+        padding: 0 7.5%;
+        padding-bottom: 30px;
+    }
+
+    .support-contact-image {
+        display: none;
+    }
+
+    .support-contact-form form {
+        width: 90%;
+    }
+
+    .faq-tab {
+        font-size: 1.1em;
+    }
+
+    .support-contact-details p:nth-child(2) {
+        padding-right: 0;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .support-contact-form form {
+        width: 95%;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        font-size: 0.8em;
+    }
+
+    .contact-form label:nth-child(1) {
+        font-size: 1.3em;
+    }
+
+    .custom-control-label {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .contact-form-radio-group {
+        flex-direction: column;
+    }
+
+    .support-contact-section {
+        padding-bottom: 50px;
+    }
 }
 
 

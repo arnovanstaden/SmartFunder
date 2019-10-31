@@ -329,11 +329,11 @@ footer {
     font-weight: 600;
     font-size: 2.1rem;
     margin-bottom: 0;
+    padding-bottom: 20px;
 }
 
 .home-landing-video-link {
     float: right;
-    padding-top: 20px;
     margin-right: 10%;
 }
 
@@ -353,7 +353,7 @@ footer {
 /* Home About Section */
 
 .home-about-section {
-    padding: 2% 10%;
+    padding: 50px 10%;
     padding-bottom: 5%;
 }
 
@@ -368,14 +368,12 @@ footer {
     margin: 0;
 }
 
-.home-about-video iframe {
-    display: block;
+.home-about-video {
+    width: 60%;
+    padding: 10px 0 30px 0;
     margin: auto;
 }
 
-.home-about-section .more-blue-button {
-    padding-top: 2%;
-}
 
 
 
@@ -383,8 +381,12 @@ footer {
 /* Home CLients Section */
 
 .home-clients-section {
-    padding: 2.5% 10%;
+    padding: 50px 10%;
     background-color: var(--light-grey);
+}
+
+.home-clients-section .section-heading {
+    padding-top: 0;
 }
 
 .home-carousel {
@@ -403,7 +405,7 @@ footer {
 /* Home Contact Section */
 
 .home-contact-section {
-    padding: 5% 10%;
+    padding: 50px 10%;
 }
 
 .home-contact-grid {
@@ -411,9 +413,14 @@ footer {
     grid-template-columns: 50% 50%;
 }
 
+.home-contact-grid>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-contact-grid img {
-    display: block;
-    margin: auto;
+
     width: 50%;
     transition: 0.5s;
 }
@@ -739,7 +746,7 @@ footer {
 
 /* Contact Section */
 .support-contact-section {
-    padding: 5%;
+    padding: 30px 5%;
     background-color: var(--light-grey);
     position: relative;
 }
