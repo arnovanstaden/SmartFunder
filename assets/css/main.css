@@ -56,7 +56,7 @@ body {
 /* • Section Headings */
 
 .section-heading {
-    padding: 2% 10%;
+    padding: 30px 10%;
     text-align: center;
 }
 
@@ -216,11 +216,35 @@ nav {
 }
 
 
+/* Mobile Navigation */
+
+.mobile-nav-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    transition: 0.5s;
+    color: var(--light-blue);
+    font-size: 1.4em;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.mobile-nav-icon:hover i {
+    color: white;
+    background-color: var(--light-blue);
+}
+
+
 /* 2.3. Footer */
 
 footer {
     width: 100%;
     background-color: var(--light-grey);
+    padding-bottom: 5px;
 }
 
 .footer-logo {
@@ -263,10 +287,20 @@ footer {
     font-weight: 300;
     font-size: 12px;
     text-align: center;
-    padding: 5px 0;
+    padding: 0 10%;
     letter-spacing: 0.5px;
     margin: 0;
 }
+
+.footer-copy a {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+.footer-copy a:hover {
+    color: var(--light-blue);
+}
+
 
 
 
@@ -313,7 +347,7 @@ footer {
 }
 
 .home-landing-contact form {
-    width: 80%;
+    width: 90%;
 }
 
 /* Home About Section */
@@ -426,11 +460,6 @@ footer {
 
 /* Story Section */
 
-
-.about-story-section {
-    padding-top: 10%;
-}
-
 .about-story-grid {
     padding: 2% 10%;
 }
@@ -511,6 +540,10 @@ footer {
 
 /* Careers Section */
 
+.about-careers-section {
+    padding: 30px 0;
+}
+
 .careers-grid {
     padding: 0 10% 3% 10%;
 }
@@ -533,7 +566,7 @@ footer {
 /* Landing Section */
 
 .support-landing-section {
-    padding: 7.5% 10% 1% 10%;
+    padding: 0 10% 1% 10%;
     background-color: rgba(153, 153, 153, 0.1);
     ;
 }
@@ -884,7 +917,7 @@ footer {
 }
 
 .client-landing-section {
-    padding-top: 7.5%;
+    position: relative;
 }
 
 /* Client Grid Section */

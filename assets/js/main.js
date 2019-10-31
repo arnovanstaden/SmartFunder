@@ -12,9 +12,18 @@ TABLE OF CONTENTS
 
 /* ---------------------------------------------
     
-1. PAGE SPECIFIC 
-    
+1. GENERAL
+   
     ----------------------------------- */
+
+// Adjust landing sections
+
+const navbarHeight = $(".navbar").height();
+
+$(".client-landing-section").css("padding-top", `${navbarHeight+50}px`);
+$(".support-landing-section").css("padding-top", `${navbarHeight+50}px`);
+$(".home-landing-section").css("padding-top", `${navbarHeight+50}px`);
+$(".about-story-section").css("padding-top", `${navbarHeight+50}px`);
 
 
 
@@ -101,14 +110,14 @@ $(".faq-grid-categories li").click(function () {
 
 // Toggle Correct Contact Form
 
-$("#employeeRadio").click(()=> {
-    $(".employer-form").fadeOut(500, ()=> {
+$("#employeeRadio").click(() => {
+    $(".employer-form").fadeOut(500, () => {
         $(".employee-form").fadeIn(500);
     });
 });
 
-$("#employerRadio").click(()=> {
-    $(".employee-form").fadeOut(500, ()=> {
+$("#employerRadio").click(() => {
+    $(".employee-form").fadeOut(500, () => {
         $(".employer-form").fadeIn(500);
     });
 });
@@ -142,7 +151,7 @@ if ($("body").hasClass("home-body")) {
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
 
-    $(".home-landing-video-link a").click(()=> {
+    $(".home-landing-video-link a").click(() => {
         player.play();
     })
 

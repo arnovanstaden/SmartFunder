@@ -16,28 +16,155 @@ TABLE OF CONTENTS
 
 
 /* ---------------------------------------------------------
-    2. General Styles */    
+    2. General Styles */
 
 
-    @media screen and (min-width:1500px) {
+@media screen and (min-width:1500px) {
 
-        html, body {
-            font-size: 18px;
-        }
-
+    html,
+    body {
+        font-size: 18px;
     }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .navbar {
+        justify-content: unset;
+        padding-left: 0;
+    }
+
+    .mobile-nav-icon {
+        position: absolute;
+        right: 0;
+        display: flex;
+    }
+
+    .navbar-logo {
+        padding: 0;
+    }
+
+    .footer-logo {
+        width: 25vw;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+
+    .footer-nav a {
+        width: 45%;
+    }
+
+    .section-heading h4 {
+        font-size: 1.1em;
+    }
+
+    .section-heading {
+        padding: 30px 5%;
+    }
+}
+
 
 
 
 /* ---------------------------------------------------------
-    6. Client Page STYLES */
+    3. HOME PAGE STYLES*/
 
-    @media screen and (max-width:576px) {
-        .client-grid {
-            padding-top: 0% 15%;
-        }
+@media screen and (min-width:1500px) {
 
-        .client-grid img {
-            width: 80%;
-        }
+    .home-landing-contact form {
+        width: 70%;
     }
+
+}
+
+@media screen and (max-width:768px) {
+    .client-landing-section img {
+        width: 100%;
+    }
+}
+
+
+
+/* ---------------------------------------------------------
+    4. ABOUT PAGE STYLES */
+
+@media screen and (max-width:991px) {
+
+    .about-story-image-container img,
+    .careers-image-container img {
+        width: 70%;
+    }
+
+    .service-grid {
+        padding: 0 10%;
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .about-story-image-container img,
+    .careers-image-container img {
+        width: 50%;
+    }
+
+    #first-about-image, .careers-image-container img {
+        padding-bottom: 30px;
+    }
+
+    .service-block {
+        width: 45%;
+    }
+
+    .service-grid {
+        padding: 0 5%;
+    }
+
+    .careers-grid .blue-outline-button {
+        text-align: center;
+    }
+
+    .about-careers-section {
+        padding-bottom: 50px
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .about-story-image-container img,
+    .careers-image-container img {
+        width: 80%;
+    }
+
+    .service-block {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+
+/* ---------------------------------------------------------
+    6. CLIENT PAGE STYLES */
+
+@media screen and (max-width:576px) {
+    .client-grid {
+        padding: 0 10%;
+    }
+
+    .client-grid img {
+        width: 80%;
+    }
+}
