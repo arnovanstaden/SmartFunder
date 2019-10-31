@@ -603,33 +603,59 @@
                     <label for="">Want to pay school fees the smart way?</label>
                     <div class="contact-form-radio-group">
                         <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="customControlValidation2"
-                                name="radio-stacked" required checked>
-                            <label class="custom-control-label" for="customControlValidation2">Employer</label>
+                            <input type="radio" class="custom-control-input" id="employerRadio" name="radio" required
+                                checked>
+                            <label class="custom-control-label" for="employerRadio">Employer</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="customControlValidation3"
-                                name="radio-stacked" required>
-                            <label class="custom-control-label" for="customControlValidation3">Employee</label>
+                            <input type="radio" class="custom-control-input" id="employeeRadio" name="radio" required>
+                            <label class="custom-control-label" for="employeeRadio">Employee</label>
                             <div class="invalid-feedback">More example invalid feedback text</div>
                         </div>
                     </div>
-                    <div>
-                        <input type="text" name="name" placeholder="Company Name" required>
+                    <div class="employer-form">
+                        <div>
+                            <input type="text" name="name" placeholder="Company Name" required>
+                        </div>
+                        <div>
+                            <input type="text" name="employeeNumber" placeholder="Number Of Employees" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Company Representative Email Address"
+                                required>
+                        </div>
+                        <div>
+                            <input type="number" name="number" placeholder="Company Representative Mobile Number"
+                                required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                                required></textarea>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" name="employeeNumber" placeholder="Number Of Employees" required>
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="Company Representative Email Address" required>
-                    </div>
-                    <div>
-                        <input type="number" name="number" placeholder="Company Representative Phone Number" required>
-                    </div>
-                    <div>
-                        <textarea name="message" rows="3" placeholder="How can SmartFunder Help?" required></textarea>
+                    <div class="employee-form">
+                        <div>
+                            <input type="text" name="name" placeholder="Name & Surname" required>
+                        </div>
+                        <div>
+                            <input type="number" name="employeeNumber" placeholder="ID Number" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div>
+                            <input type="number" name="number" placeholder="Mobile Number" required>
+                        </div>
+                        <div>
+                            <input type="text" name="employee_comapany" placeholder="Company name" required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                                required></textarea>
+                        </div>
                     </div>
                     <input type="submit" name='submit' value="Send Message" class="submit-button">
+                </form>
             </div>
             <div class="col-md-6 support-contact-details">
                 <h1>Want to get in touch?</h1>

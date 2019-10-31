@@ -97,6 +97,22 @@ $(".faq-grid-categories li").click(function () {
     $(`.faq-grid-questions div:nth-child(${listIndex})`).fadeIn(500);
 });
 
+
+
+// Toggle Correct Contact Form
+
+$("#employeeRadio").click(()=> {
+    $(".employer-form").fadeOut(500, ()=> {
+        $(".employee-form").fadeIn(500);
+    });
+});
+
+$("#employerRadio").click(()=> {
+    $(".employee-form").fadeOut(500, ()=> {
+        $(".employer-form").fadeIn(500);
+    });
+});
+
 // --------------
 
 /*  2.3. Home Page */

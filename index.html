@@ -69,15 +69,72 @@
     <!-- Home Landing Section -->
     <section class="home-landing-section">
         <div class="row">
-            <div class="col-sm-8 home-landing-left">
+            <div class="col-sm-7 home-landing-left">
                 <h1>The Smarter Way to Pay for Education</h1>
                 <div class="home-landing-video-link more-blue-button">
                     <a href="./index.html#home-about-video">Watch the Video <i class="fas fa-play"></i></a>
                 </div>
                 <img src="./assets/images/illustrations/Home/Home-Landing.png" alt="" class="home-landing-image">
             </div>
-            <div class="col-sm-4 home-landing-contact">
-
+            <div class="col-sm-5 home-landing-contact">
+                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php" class="contact-form"
+                    id="support-company-form">
+                    <label for="">Want to pay school fees the smart way?</label>
+                    <div class="contact-form-radio-group">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="employerRadio" name="radio" required
+                                checked>
+                            <label class="custom-control-label" for="employerRadio">Employer</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="employeeRadio" name="radio" required>
+                            <label class="custom-control-label" for="employeeRadio">Employee</label>
+                            <div class="invalid-feedback">More example invalid feedback text</div>
+                        </div>
+                    </div>
+                    <div class="employer-form">
+                        <div>
+                            <input type="text" name="name" placeholder="Company Name" required>
+                        </div>
+                        <div>
+                            <input type="text" name="employeeNumber" placeholder="Number Of Employees" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Company Representative Email Address"
+                                required>
+                        </div>
+                        <div>
+                            <input type="number" name="number" placeholder="Company Representative Mobile Number"
+                                required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="employee-form">
+                        <div>
+                            <input type="text" name="name" placeholder="Name & Surname" required>
+                        </div>
+                        <div>
+                            <input type="number" name="employeeNumber" placeholder="ID Number" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div>
+                            <input type="number" name="number" placeholder="Mobile Number" required>
+                        </div>
+                        <div>
+                            <input type="text" name="employee_comapany" placeholder="Company name" required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" name='submit' value="Send Message" class="submit-button">
+                </form>
             </div>
         </div>
 
@@ -94,7 +151,8 @@
         <p class="home-about-text">
             SmartFunder is a mechanism for Employers of choice to increase their EVP and assist their employees to pay
             school fees in a smarter, more tax efficient way. Government created this incentive to include the private
-            sector in its efforts to make education more affordable and accessible in South Africa. <br><br id="home-about-video"> <!-- Video link here for perfect position-->
+            sector in its efforts to make education more affordable and accessible in South Africa. <br><br
+                id="home-about-video"> <!-- Video link here for perfect position-->
 
             SmartFunder offers an holistic, outsourced solution, assisting companies to set up tax compliant bursary
             structures, get employees onboarded, verification of educational institutions and payment directly to the
@@ -102,7 +160,7 @@
             information.
         </p>
 
-        <div class="home-about-video" >
+        <div class="home-about-video">
             <iframe src="https://player.vimeo.com/video/370022512" width="640" height="361" frameborder="0"
                 allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
