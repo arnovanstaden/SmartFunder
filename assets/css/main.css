@@ -185,11 +185,12 @@ nav {
 }
 
 .navbar-line {
-    width: 100%;
+    height: 100%;
     background-color: var(--dark-grey);
-    width: 0.5px;
+    width: 2px;
     padding: 0;
     margin: 0 30px 0 10px;
+    display: block;
 }
 
 .login-link {
@@ -247,6 +248,7 @@ nav {
     z-index: 20;
     width: 0;
     transition: 0.8s;
+    overflow-x: hidden;
 }
 
 .mobile-nav-content a{
@@ -255,6 +257,13 @@ nav {
     font-size: 1.5em;
     display: block;
     margin: 5px 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.mobile-nav-content a:hover {
+    color: var(--light-blue);
+    transform: scale(1.1);
 }
 
 .mobile-nav>div:nth-child(1) {
@@ -1042,3 +1051,38 @@ footer {
 
 ------------------------------------------------- */
 
+.thank-you-section {
+    background-color: white;
+    height: 80vh;
+    padding-top: 100px;
+}
+
+.thank-you-section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 10%;
+    text-align: center;
+}
+
+
+.thank-you-section h1 {
+    font-weight: 600;
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.thank-you-section h2 {
+    font-weight: 400;
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+
+.thank-you-section p {
+    font-size: 1.2em;
+    color: var(--light-blue);
+}

@@ -153,10 +153,21 @@ if ($("body").hasClass("home-body")) {
     const owl = $('.owl-carousel');
     $(document).ready(function () {
         owl.owlCarousel({
-            items: 5,
+            items: 2,
             loop: true,
             margin: 50,
-            autoplayHoverPause: true
+            autoplayHoverPause: true,
+            responsive: {
+                1250:{
+                    items: 5
+                },
+                991: {
+                    items: 4
+                },
+                768: {
+                    items: 3
+                }
+            }
         });
     });
 

@@ -125,6 +125,7 @@ TABLE OF CONTENTS
 
     .home-landing-section h1 {
         text-align: center;
+        font-size: 1.6em;
     }
 
     .home-about-section {
@@ -132,7 +133,7 @@ TABLE OF CONTENTS
     }
 
     .home-about-video {
-        width: 70%;
+        width: 80%;
         padding: 10px 0;
     }
 
@@ -173,7 +174,20 @@ TABLE OF CONTENTS
 @media screen and (max-width:576px) {
 
     .home-about-video {
-        width: 90%
+        width: 100%
+    }
+
+    .home-landing-image {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    .home-landing-section {
+        padding-top: 120px;
+    }
+
+    .home-landing-contact form {
+        width: 90%;
     }
 }
 
@@ -228,6 +242,12 @@ TABLE OF CONTENTS
 }
 
 @media screen and (max-width:576px) {
+
+    .about-story-section {
+        padding-top: 100px;
+    }
+
+
 
     .about-story-image-container img,
     .careers-image-container img {
@@ -303,6 +323,10 @@ TABLE OF CONTENTS
         width: 95%;
     }
 
+    .support-landing-section {
+        padding-top: 120px;
+    }
+
     .contact-form input::placeholder,
     .contact-form textarea::placeholder {
         font-size: 0.8em;
@@ -348,5 +372,9 @@ TABLE OF CONTENTS
 
     .client-grid img {
         width: 80%;
+    }
+
+    .client-landing-section {
+        padding-top: 120px;
     }
 }

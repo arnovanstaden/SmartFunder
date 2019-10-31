@@ -18,7 +18,7 @@
     <meta name="keywords" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/images/icons/SF-Favicon.png">
+    <link rel="icon" type="image/png" href="../images/icons/SF-Favicon.png">
 
     <!-- StyleSheets -->
 
@@ -27,26 +27,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 
     <!-- Vendors -->
-    <link href="./vendors/font-awesome/css/all.css" rel="stylesheet">
-    <link href="./vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="./vendors/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../../vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Internal -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="..//css/responsive.css" />
 
 </head>
 
-<body class="home-body">
+<body>
 
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="./index.html">
-            <img class="navbar-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png"
+        <a class="navbar-brand" href="../../index.html">
+            <img class="navbar-logo" src="../images/logos/SmartFunder-Logo-Blue.png"
                 alt="SmartFunder Navbar Logo">
         </a>
-
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item">
@@ -59,7 +56,7 @@
                     <a href="./Clients.html">Clients</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="./support.html">Support</a>
+                    <a href="./support.html" class="active-page">Support</a>
                 </li>
                 <li class="navbar-item  navbar-line"></li>
                 <li class="navbar-item login-link">
@@ -67,35 +64,69 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-nav-icon" onclick="openMobileNav()">
+            <i class="fal fa-bars"></i>
+        </div>
+
+        <div class="mobile-nav">
+
+            <div>
+                <i class="far fa-times" onclick="closeMobileNav()"></i>
+            </div>
+            <img class="mobile-nav-logo" src="../images/logos/SmartFunder-Logo-Blue.png"
+                alt="SmartFunder Navbar Logo">
+            <div class="mobile-nav-content">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./Clients.html">Clients</a>
+                <a href="./support.html">Support</a>
+                <a href="??" class="mobile-nav-login">Login</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Thank You Section -->
 
     <section class="thank-you-section">
-        
+        <div>
+            <h1>Thank you for contacting SmartFunder</h1>
+            <h2>We'll get back to you in a jiffy!</h2>
+            <p>We'll take you back to our home page in a few seconds.</p>
+        </div>
+
     </section>
 
     <!-- Footer -->
     <footer class="container-fluid">
         <div class="footer-nav">
-            <a href="./about.html">About</a>
-            <a href="./about.html#careers">Careers</a>
-            <a href="./support.html">Support</a>
-            <a href="./support.html#faq">FAQ</a>
-            <a href="./terms.html">Terms</a>
-            <a href="./privacy.html">Privacy</a>
+            <a href="../../about.html">About</a>
+            <a href="../../about.html#careers">Careers</a>
+            <a href="../../support.html">Support</a>
+            <a href="../../support.html#faq">FAQ</a>
+            <a href="../../terms.html">Terms</a>
+            <a href="../../privacy.html">Privacy</a>
         </div>
-        <img class="footer-logo" src="./assets/images/logos//SmartFunder-Logo-Blue.png" alt="SmartFunder Footer Logo">
+        <img class="footer-logo" src="../images/logos//SmartFunder-Logo-Blue.png" alt="SmartFunder Footer Logo">
         <div class="footer-line"></div>
         <p class="footer-copy">Copyright © 2019 SmartFunder. All rights reserved.</p>
     </footer>
 
+   
     <!-- Scripts -->
-    <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
-    <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./vendors/owl-carousel/owl.carousel.js"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="../../vendors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Redirect after 5 secs -->
+    <script>
+        setTimeout(() => {
+            window.location = "../../index.html";
+        }, 7500);
+    
+    </script>
 
 </body>
 
