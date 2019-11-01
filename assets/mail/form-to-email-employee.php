@@ -24,7 +24,7 @@ if(IsInjected($employeeEmail))
     exit;
 }
 
-$email_from = 'info@webdacity.co.za';//<== update the email address
+$email_from = 'info@smartfunder.co.za';//<== update the email address
 $email_subject = "Employee - Website Contact Form Submission";
 $email_body = "You have received a new message form an employee:\n\n".
 
@@ -35,7 +35,7 @@ $email_body = "You have received a new message form an employee:\n\n".
     "Employee Company:\n $employeeCompany \n\n".
     "Message:\n $employeeMessage";
     
-$to = "info@webdacity.co.za";//<== update the email address
+$to = "info@smartfunder.co.za";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
