@@ -81,7 +81,7 @@ TABLE OF CONTENTS
 
 @media screen and (min-width:1500px) {
 
-    .home-landing-contact form {
+    .home-landing-contact .contact-form {
         width: 70%;
     }
 
@@ -92,8 +92,9 @@ TABLE OF CONTENTS
         padding: 50px 5%;
     }
 
-    .home-landing-contact form {
+    .home-landing-contact .contact-form{
         width: 100%;
+        margin-top: 30px;
     }
 
     .home-landing-contact {
@@ -106,7 +107,7 @@ TABLE OF CONTENTS
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:765px) {
     .client-landing-section img {
         width: 100%;
     }
@@ -123,7 +124,7 @@ TABLE OF CONTENTS
         margin: auto;
     }
 
-    .home-landing-contact form {
+    .home-landing-contact .contact-form {
         width: 75%;
     }
 
@@ -190,7 +191,7 @@ TABLE OF CONTENTS
         padding-top: 120px;
     }
 
-    .home-landing-contact form {
+    .home-landing-contact .contact-form{
         width: 90%;
     }
 }

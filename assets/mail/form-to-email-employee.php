@@ -4,30 +4,36 @@ if(!isset($_POST['submit']))
 	//This page should not be accessed directly. Need to submit the form.
 	echo "error; you need to submit the form!";
 }
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$employeeNameSurname = $_POST['employeeNameSurname'];
+$employeeIDNumber = $_POST['employeeIDNumber'];
+$employeeEmail = $_POST['employeeEmail'];
+$employeeNumber = $_POST['employeeNumber'];
+$employeeCompany = $_POST['employeeCompany'];
+$employeeMessage = $_POST['employeeMessage'];
 
 //Validate first
-if(empty($name)||empty($visitor_email)) 
+if(empty($employeeNameSurname)||empty($employeeEmail)) 
 {
     echo "Name and email are mandatory!";
     exit;
 }
 
-if(IsInjected($visitor_email))
+if(IsInjected($employeeEmail))
 {
     echo "Bad email value!";
     exit;
 }
 
 $email_from = 'info@webdacity.co.za';//<== update the email address
-$email_subject = "Website Contact Form Submission";
-$email_body = "You have received a new message:\n\n".
+$email_subject = "Employee - Website Contact Form Submission";
+$email_body = "You have received a new message form an employee:\n\n".
 
-    "From:\n $name.\n\n".
-    "Message:\n $message \n\n".
-    "Email:\n $visitor_email";
+    "Employee Name:\n $employeeNameSurname.\n\n".
+    "Employee ID Number:\n $employeeIDNumber \n\n".
+    "Employee Number:\n $employeeNumber \n\n".
+    "Employee Email:\n $employeeEmail \n\n".
+    "Employee Company:\n $employeeCompany \n\n".
+    "Message:\n $employerMessage";
     
 $to = "info@webdacity.co.za";//<== update the email address
 $headers = "From: $email_from \r\n";

@@ -102,10 +102,9 @@
                 <img src="./assets/images/illustrations/Home/Home-Landing.png"
                     alt="SMartFunder landing page image with students - education" class="home-landing-image">
             </div>
-            <div class="col-sm-12 col-md-5 home-landing-contact" >
-                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php" class="contact-form"
-                    id="support-company-form">
-                    <label for="">Want to pay school fees the smart way?</label>
+            <div class="col-sm-12 col-md-5 home-landing-contact">
+                <div class="contact-form">
+                    <h2 for="">Want to pay school fees the smart way?</h2>
                     <div class="contact-form-radio-group">
                         <div class="custom-control custom-radio">
                             <input type="radio" class="custom-control-input" id="employerRadio" name="radio" required
@@ -118,52 +117,55 @@
                             <div class="invalid-feedback">More example invalid feedback text</div>
                         </div>
                     </div>
-                    <div class="employer-form">
+                    <form method="post" name="myemailform" action="./assets/mail/form-to-email-employer.php"
+                        class="employer-form">
                         <div>
-                            <input type="text" name="name" placeholder="Company Name" required>
+                            <input type="text" name="employerCompanyName" placeholder="Company Name" required>
                         </div>
                         <div>
-                            <input type="text" name="employeeNumber" placeholder="Number Of Employees" required>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Company Representative Email Address"
+                            <input type="text" name="employerNumberOfEmployees" placeholder="Number Of Employees"
                                 required>
                         </div>
                         <div>
-                            <input type="number" name="number" placeholder="Company Representative Mobile Number"
-                                required>
+                            <input type="email" name="employerCompanyEmail"
+                                placeholder="Company Representative Email Address" required>
                         </div>
                         <div>
-                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                            <input type="number" name="employerCompanyNumber"
+                                placeholder="Company Representative Mobile Number" required>
+                        </div>
+                        <div>
+                            <textarea name="employerMessage" rows="3" placeholder="How can SmartFunder Help?"
                                 required></textarea>
                         </div>
-                    </div>
-                    <div class="employee-form">
+                        <input type="submit" name='submit' value="Send Message" class="submit-button">
+                    </form>
+                    <form method="post" name="myemailform" action="./assets/mail/form-to-email-employee.php"
+                        class="employee-form">
                         <div>
-                            <input type="text" name="name" placeholder="Name & Surname" required>
+                            <input type="text" name="employeeNameSurname" placeholder="Name & Surname" required>
                         </div>
                         <div>
-                            <input type="number" name="employeeNumber" placeholder="ID Number" required>
+                            <input type="number" name="employeeIDNumber" placeholder="ID Number" required>
                         </div>
                         <div>
-                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="email" name="employeeEmail" placeholder="Email Address" required>
                         </div>
                         <div>
-                            <input type="number" name="number" placeholder="Mobile Number" required>
+                            <input type="number" name="employeeNumber" placeholder="Mobile Number" required>
                         </div>
                         <div>
-                            <input type="text" name="employee_comapany" placeholder="Company name" required>
+                            <input type="text" name="employeeCompany" placeholder="Company name" required>
                         </div>
                         <div>
-                            <textarea name="message" rows="3" placeholder="How can SmartFunder Help?"
+                            <textarea name="employeeMessage" rows="3" placeholder="How can SmartFunder Help?"
                                 required></textarea>
                         </div>
-                    </div>
-                    <input type="submit" name='submit' value="Send Message" class="submit-button">
-                </form>
-            </div>
-        </div>
 
+                        <input type="submit" name='submit' value="Send Message" class="submit-button">
+                    </form>
+                </div>
+            </div>
     </section>
 
     <!-- Home About Section -->

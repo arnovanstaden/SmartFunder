@@ -11,13 +11,13 @@ $employerCompanyNumber = $_POST['employerCompanyNumber'];
 $employerMessage = $_POST['employerMessage'];
 
 //Validate first
-if(empty($name)||empty($visitor_email)) 
+if(empty($employerCompanyName)||empty($employerCompanyEmail)) 
 {
     echo "Name and email are mandatory!";
     exit;
 }
 
-if(IsInjected($visitor_email))
+if(IsInjected($employerCompanyEmail))
 {
     echo "Bad email value!";
     exit;

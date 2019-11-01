@@ -430,7 +430,7 @@ footer {
     font-size: 0.9em;
 }
 
-.home-landing-contact form {
+.home-landing-contact .contact-form {
     width: 90%;
     border: 3px solid transparent;
 }
