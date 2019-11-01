@@ -126,7 +126,7 @@ $(".faq-grid-categories li").click(function () {
 
 
 
-// Toggle Correct Contact Form
+// Toggle Correct Contact Form & form Action
 
 $("#employeeRadio").click(() => {
     $(".employer-form").fadeOut(500, () => {

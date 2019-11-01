@@ -548,7 +548,7 @@ footer {
 
 .home-landing-contact-form-animation {
     animation-name: contact-form-animation ;
-    animation-duration: 1.5fs;
+    animation-duration: 1.5s;
     animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
 }
@@ -874,9 +874,14 @@ footer {
     transition: 0.5s;
 }
 
+
 .faq-panel-image {
-    display: block;
-    margin:0 auto;
+    padding-bottom: 20px;
+}
+
+.faq-panel-image img{
+    display: block !important;
+    margin: auto !important;
 }
 
 #faq-image-1 {
@@ -889,6 +894,7 @@ footer {
 
 #faq-image-3 {
     width: 90%;
+
 }
 
 
@@ -910,7 +916,7 @@ footer {
     margin: auto;
 }
 
-.contact-form label:nth-child(1) {
+.contact-form h2 {
     font-weight: 600;
     font-size: 1.5em;
 }
